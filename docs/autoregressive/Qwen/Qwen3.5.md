@@ -132,7 +132,7 @@ sglang serve \
   --port 30000
 ```
 
-**AMD (BF16):**
+**AMD:**
 
 Deploy Qwen3.5-397B-A17B with the following command (MI300X/MI325X/MI355X):
 
