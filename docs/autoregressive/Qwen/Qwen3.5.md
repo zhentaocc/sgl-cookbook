@@ -149,25 +149,6 @@ sglang serve \
 ```
 > **Note:** TP8 works on all MI GPUs. For MI325X/MI355X, you can use --tp 4 as the minimum requirement.
 
-**AMD (FP8):**
-
-For the FP8 checkpoint on MI300X/MI325X, use the AITER unified attention backend (requires an SGLang ROCm build with the [AITER](https://github.com/ROCm/aiter) dependency available, as in the official ROCm Docker images):
-
-```shell
-sglang serve \
-  --model-path Qwen/Qwen3.5-397B-A17B-FP8 \
-  --tp 4 \
-  --reasoning-parser qwen3 \
-  --tool-call-parser qwen3_coder \
-  --mem-fraction-static 0.8 \
-  --enable-flashinfer-allreduce-fusion \
-  --attention-backend aiter \
-  --host 0.0.0.0 \
-  --port 30000
-```
-
-> **Note:** On MI325X you can use `--tp 2` per the memory table above. Enable `SGLANG_USE_AITER=1` in the environment if you rely on AITER kernels for MoE or GEMM as well.
-
 ### 4.1 Basic Usage
 
 For basic API usage and request examples, please refer to:
