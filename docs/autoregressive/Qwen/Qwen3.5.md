@@ -147,7 +147,7 @@ sglang serve \
   --host 0.0.0.0 \
   --port 30000
 ```
-> **Note:** TP8 works on all MI GPUs. For MI325X, you can use --tp 4 as the minimum requirement.
+> **Note:** TP8 works on all MI GPUs. For MI325X/MI355X, you can use --tp 4 as the minimum requirement.
 
 **AMD (FP8):**
 
