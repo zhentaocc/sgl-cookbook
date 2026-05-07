@@ -143,7 +143,7 @@ sglang serve \
   --reasoning-parser qwen3 \
   --tool-call-parser qwen3_coder \
   --mem-fraction-static 0.8 \
-  --attention-backend triton \
+  --attention-backend aiter \ 
   --host 0.0.0.0 \
   --port 30000
 ```
